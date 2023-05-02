@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <h1><img class="logo-alura" src="imagenes/Logo.png"></h1>
+                <h1 class="titulo">Encriptador Alura</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="input">
+                <div class="input-texto">
+                    <label for="texto1">Ingrese el texto aquí</label>
+                    <textarea cols="50" rows="17" id="texto1" type="text" class="input-pad"></textarea>                    
+                </div>
+
+                <div class="imagen-fondo-1">
+                    <img class= "imagen-1" src="imagenes/espia1.jpg" alt="Imagen de espía">
+                    <img class= "imagen-2" src="imagenes/espia1.jpg" alt="Imagen de espía">
+                </div>
+
+                <div class="output">
+                    <ul class="mensaje">
+                        <img src="imagenes/Muñeco.png" class="imagen1" id="imagen1">
+                        <h2 class="mensaje-no-encontrado" id="mensaje-no-encontrado">Ningún mensaje fue encontrado</h2>
+                        <p class="mensaje-deseado" id="mensaje-deseado">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </ul>
+                    <ul class="respuesta">
+                        <textarea cols="28" rows="28" id="cuadro-respuesta" class="respuesta-deseada"></textarea>                                                                     
+                        <button type="button" id="btn-copiar" onclick="copiar()">Copiar</button>
+                    </ul>
+                </div>                
+            </section>
+                
+
+            <section class="input-botones">
+                <p class="alerta">&#10071;Solo letras minúsculas y sin acentos</p>
+                <ul class="botones">
+                    <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>                    
+                </ul>
+            </section>
+
+        </main>
+
+        <script type="text/javascript" src="Script.js"></script>
+
+
+        <footer>
+            <p class="diseñador">Diseñado por Gerardo Aguiar Magaña</p>
+        </footer>
+
+    </body>
+</html>
+
